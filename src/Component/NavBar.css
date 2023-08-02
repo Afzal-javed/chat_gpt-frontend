@@ -1,0 +1,19 @@
+.sign-up {
+    color: darkslategrey;
+    text-decoration: none;
+
+}
+
+.sign-up:hover {
+    color: black;
+
+}
+
+.login {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+.login:hover {
+    color: black;
+}
