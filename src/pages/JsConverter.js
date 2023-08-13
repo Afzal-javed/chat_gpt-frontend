@@ -14,7 +14,7 @@ const JsConverter = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('http://localhost:8080/jsconverter', { text });
+            const { data } = await axios.post('https://chat-gpt-backend-jypf.onrender.com/jsconverter', { text });
 
             setCode(data);
         } catch (err) {

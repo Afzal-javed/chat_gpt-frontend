@@ -14,7 +14,7 @@ const Summary = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('http://localhost:8080/summary', { text });
+            const { data } = await axios.post('https://chat-gpt-backend-jypf.onrender.com/summary', { text });
 
             setSummary(data);
         } catch (err) {

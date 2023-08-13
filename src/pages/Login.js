@@ -14,7 +14,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:8080/login', { email, password })
+            await axios.post('https://chat-gpt-backend-jypf.onrender.com/login', { email, password })
             toast.success('Login Successfully')
             localStorage.setItem("authToken", true)
             navigate('/')
